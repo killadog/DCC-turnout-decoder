@@ -191,9 +191,9 @@ PS: Итак это декодер на 5 стрелок. Используя д�
 
 ## Файлы
 
-turnout_v.2.00.lay - для изготовления платы в формате Sprint Layout
-[Library for Arduino for decoding dcc signals](https://github.com/MynaBay/DCC_Decoder) - библиотека для NMRA DCC декодеров
-dcc_turnuot_V2.00.ino - скетч для Arduino
+- turnout_v.2.00.lay - для изготовления платы в формате Sprint Layout
+- [Library for Arduino for decoding dcc signals](https://github.com/MynaBay/DCC_Decoder) - библиотека для NMRA DCC декодеров
+- dcc_turnuot_V2.00.ino - скетч для Arduino
 
 ## Бонус
 
