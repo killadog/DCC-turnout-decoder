@@ -4,17 +4,17 @@
 
 ## Набор
 
-![Roco z21](img/1_roco_z21.jpeg)
-
 <p align="center">
-<img src="img/1_roco_z21.jpeg" alt="Roco z21" width="300" align="center">
+<img src="img/1_roco_z21.jpeg" alt="Roco z21" width="300" />
 </p>
 
 - [Roco z21](https://www.z21.eu/en/z21-system/the-models) белая (с чёрной Z21 всё будет также).
 - Рельсы и стрелки [Tillig](https://www.tillig.com/eng/index.html) TT.
 - Стрелочные электрические приводы [Tillig 83531](https://www.tillig.com/Produkte/produktinfo-83531.html) (правый) и [Tillig 83532](https://www.tillig.com/Produkte/produktinfo-83532.html) (левый).
 
-![Tillig 83531](img/2_Tillig_83531.jpg)
+<p align="center">
+<img src="img/2_Tillig_83531.jpg" alt="Tillig 83531" width="300" />
+</p>
 
 Собрав всё это вместе получается модель железной дороги с управляемыми стрелочными развязками с цифровым управлением DCC. 
 
@@ -72,15 +72,19 @@
 
 ## Теория
 
-Стрелочный декодер сделан с  помощью [Arduino Nano](https://www.arduino.cc/en/Main/arduinoBoardNano)
+Стрелочный декодер сделан с помощью [Arduino Nano](https://www.arduino.cc/en/Main/arduinoBoardNano)
 
-![Arduino Nano](img/3_arduino_nano.png)
+<p align="center">
+<img src="img/3_arduino_nano.png" alt="Arduino Nano" width="300" />
+</p>
 
 и залитого в него скетчем, в соответствии с которым декодер выдаёт на свои определённые цифровые выходы сигнал, который замыкает или размыкает контакт на стрелочном электрическом приводе, который с помощью соленоида двигает маленькую палочку, которая и переводит стрелку.
 
 Для создания стрелочного декодера используется 11 цифровых пинов D2-D12 из Arduino Nano.
 
-![Arduino Nano pins](img/4_arduino_nano_pins.png)
+<p align="center">
+<img src="img/4_arduino_nano_pins.png" alt="Arduino Nano" width="300" />
+</p>
 
 Один пин D2 забирается под приём DCC команд в режиме INPUT. Каждому стрелочному приводу надо два пина в режиме OUTPUT, то есть оставшиеся 10 пинов делённые на 2 дают 5, т.е. стрелочный декодер может управлять пятью стрелками.
 
@@ -96,7 +100,9 @@
 
 Исполнено в [Fritzing](http://fritzing.org/).
 
-![Fritzing](img/5_turnout_schem.png)
+<p align="center">
+<img src="img/5_turnout_schem.png" alt="Fritzing" width="450" />
+</p>
 
 ## Всё что надо
 
@@ -120,31 +126,29 @@
 
 ## Проектирование с помощью Sprint-Layout
 
-![Fritzing](img/6_Sprint-Layout_1.jpeg)
-
-![Fritzing](img/7_Sprint-Layout_2.jpeg)
+<p align="center">
+<img src="img/6_Sprint-Layout_1.jpeg" alt="Fritzing" width="450" />
+<img src="img/7_Sprint-Layout_2.jpeg" alt="Fritzing" width="450" />
+</p>
 
 ## Лазерно-утюжная технология
 
-![lum](img/8_lum_1.jpeg)
-
-![lum](img/9_lum_2.jpeg)
-
-![lum](img/10_lum_3.jpeg)
-
-![lum](img/11_lum_4.jpeg)
-
-![lum](img/12_lum_5.jpeg)
-
-![lum](img/13_lum_6.jpeg)
+<p align="center">
+<img src="img/8_lum_1.jpeg" alt="lum" width="450" />
+<img src="img/9_lum_2.jpeg" alt="lum" width="450" />
+<img src="img/10_lum_3.jpeg" alt="lum" width="450" />
+<img src="img/11_lum_4.jpeg" alt="lum" width="450" />
+<img src="img/12_lum_5.jpeg" alt="lum" width="450" />
+<img src="img/13_lum_6.jpeg" alt="lum" width="450" />
+</p>
 
 ## Пайка и подключение
 
-![DCC](img/14_IMG_3823.jpg)
-
-![DCC](img/15_IMG_3824.jpg)
-
-![DCC](img/16_IMG_3825.jpg)
+<p align="center">
+<img src="img/14_IMG_3823.jpg" alt="DCC" width="450" />
+<img src="img/15_IMG_3824.jpg" alt="DCC" width="450" />
+<img src="img/16_IMG_3825.jpg" alt="DCC" width="450" />
+</p>
 
 Не забываем залить [скетч](https://github.com/killadog/DCC-turnout-decoder/blob/main/dcc_turnuot_V2.00.ino) в Arduino.
 
@@ -167,7 +171,9 @@
 - Стабилизатор. Вот тут подробнее: обычный стабилизатор на КР142ЕН5А прост и общедоступен, но ожидается большой разброс по потреблению - светофоры, освещение, звуковое оформление, может еще что, значит нужно что-то мощнее и эффективнее. Китай предлагает много решений на базе DC-DC конвертера GS2678 - им и воспользуемся.
 - Токовый датчик - широко известный MAX471. Следить за потребляемым током, выводить значение на экран, а в случае перегрузки - отключать потребителей при помощи реле например.
 
-![acdc](img/17_IMG_1453.JPG)
+<p align="center">
+<img src="img/17_IMG_1453.JPG" alt="acdc" width="450" />
+</p>
 
 Работает.
 
@@ -175,13 +181,18 @@
 
 Настройка 1-ой стрелки для 4-го декодера (адрес 17)
 
-![Rocrail](img/18_rocrail_switch_01.png)
-
-![Rocrail](img/19_rocrail_switch_02.png)
+<p align="center">
+<img src="img/18_rocrail_switch_01.png" alt="Rocrail" width="450" />
+<img src="img/19_rocrail_switch_02.png" alt="Rocrail" width="450" />
+</p>
 
 Пример автоматического управления стрелками в [Rocrail](https://wiki.rocrail.net/doku.php)
 
-[![Watch the video](img/DCC_Decoder_youtube.png)](https://youtu.be/0nPtjIS2L_g)
+<p align="center">
+<a href="https://youtu.be/0nPtjIS2L_g" target="_blank">
+<img src="img/DCC_Decoder_youtube.png" alt="Rocrail" width="450" />
+</a>
+</p>
 
 ## Итог
 
@@ -201,10 +212,10 @@ PS: Итак это декодер на 5 стрелок. Используя д�
 
 ## Бонус
 
-![bonus](img/20_maket_01.JPG)
+<p align="center">
+<img src="img/20_maket_01.JPG" alt="bonus" width="450" />
+<img src="img/21_maket_02.JPG" alt="bonus" width="450" />
+<img src="img/22_maket_03.JPG" alt="bonus" width="450" />
+<img src="img/23_maket_04.JPG" alt="bonus" width="450" />
+</p>
 
-![bonus](img/21_maket_02.JPG)
-
-![bonus](img/22_maket_03.JPG)
-
-![bonus](img/23_maket_04.JPG)
