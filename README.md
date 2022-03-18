@@ -6,6 +6,10 @@
 
 ![Roco z21](img/1_roco_z21.jpeg)
 
+<center>
+<img src="img/1_roco_z21.jpeg" alt="Roco z21" width="300">
+</center>
+
 - [Roco z21](https://www.z21.eu/en/z21-system/the-models) белая (с чёрной Z21 всё будет также).
 - Рельсы и стрелки [Tillig](https://www.tillig.com/eng/index.html) TT.
 - Стрелочные электрические приводы [Tillig 83531](https://www.tillig.com/Produkte/produktinfo-83531.html) (правый) и [Tillig 83532](https://www.tillig.com/Produkte/produktinfo-83532.html) (левый).
